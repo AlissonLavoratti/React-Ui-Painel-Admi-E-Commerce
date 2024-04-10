@@ -26,26 +26,35 @@ const _nav = [
       text: 'NEW',
     },
   },
+
   {
     component: CNavTitle,
-    name: 'Theme',
+    name: 'Site',
+    to: '/site',
+    icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
+  }, 
+
+  {
+    component: CNavTitle,
+    name: 'Usuários',
   },
   {
     component: CNavItem,
-    name: 'Colors',
+    name: 'Usuários',
     to: '/theme/colors',
     icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
-    name: 'Typography',
+    name: 'Habilitações',
     to: '/theme/typography',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {
     component: CNavTitle,
-    name: 'Components',
+    name: 'Produtos',
   },
+
   {
     component: CNavGroup,
     name: 'Base',
@@ -193,12 +202,6 @@ const _nav = [
         to: '/forms/validation',
       },
     ],
-  },
-  {
-    component: CNavItem,
-    name: 'Charts',
-    to: '/charts',
-    icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
   {
     component: CNavGroup,
